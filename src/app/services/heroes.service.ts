@@ -58,11 +58,15 @@ export class HeroesService {
   ];
 
   constructor() {
-    console.log('Servicio listo para usar!!');
+    // console.log('Servicio listo para usar!!');
   }
 
   public getHeroes(): Heroe[] {
     return this.heroes;
+  }
+
+  public getHeroesId( idx: string ): Heroe[] {
+    return this.heroes[idx];
   }
 
 }
