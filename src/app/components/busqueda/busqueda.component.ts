@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Heroe, HeroesService } from '../../services/heroes.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-busqueda',
@@ -14,7 +15,8 @@ export class BusquedaComponent implements OnInit {
 
   constructor( private _heroesService: HeroesService,
                private _activedRoute: ActivatedRoute,
-               private _router: Router ) { }
+              //  private _router: Router,
+               private _location: Location ) { }
 
   ngOnInit() {
     this._activedRoute.params.subscribe( params => {
@@ -24,6 +26,7 @@ export class BusquedaComponent implements OnInit {
   }
 
   verHeroe( index: number ) {
-    this._router.navigate( ['/heroe', index] );
+    // this._router.navigate( ['/heroe', index] );
+    this._location.back();
   }
 }
