@@ -11,10 +11,10 @@ export class HeroeTarjetaComponent implements OnInit {
   @Input() heroe: any = {};
   @Input() index: number;
 
-  @Output() heroeSelected: EventEmitter<number>;
+  // @Output() heroeSelected: EventEmitter<number>;
 
   constructor( private router: Router) {
-    this.heroeSelected = new EventEmitter();
+    // this.heroeSelected = new EventEmitter();
   }
 
   ngOnInit() {
