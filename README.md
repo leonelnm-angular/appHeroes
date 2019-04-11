@@ -4,4 +4,4 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Dirección de prueba
 
-https://test.learningvps.es/comics/#/home
+https://test.learningvps.es/comics/
